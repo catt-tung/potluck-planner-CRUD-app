@@ -1,0 +1,18 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>All Potlucks</h1>
+  <% if (potlucks.length !== 0) { %>
+    <ul>
+      <% potlucks.forEach(potluck => { %>
+        <li> <%= potluck.name %></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <h4>Add a Potluck!</h4>
+  <% } %> 
+
+</section>
+
+<%- include('../partials/footer') %>
