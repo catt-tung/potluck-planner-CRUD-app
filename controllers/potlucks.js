@@ -41,8 +41,27 @@ function show (req, res) {
   })
 }
 
+function deletePotluck(req, res) {
+  Potluck.findById(req.params.id)
+  .then(potluck => {
+    if (potluck.host.equals(req.user.profile._id)) {
+      potluck.delete()
+      .then(() => {
+        res.redirect('/potlucks')
+      })
+    } else {
+      throw new Error ('Not authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/potlucks')
+  })
+}
+
 export {
   index,
   create,
   show,
+  deletePotluck as delete,
 }

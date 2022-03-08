@@ -29,9 +29,9 @@
 
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
-  <h2>Edit Potluck Details</h2>
+  <h2>Update Potluck Details</h2>
   <form action="/potlucks/<%= potluck._id %>/edit" method="GET">
-    <button class="btn" type="submit">Edit this Potluck</button>
+    <button class="btn" type="submit">Update details</button>
   </form>
 <% } %> 
 

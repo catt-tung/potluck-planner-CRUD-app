@@ -11,6 +11,9 @@ router.get('/:id', potlucksCtrl.show)
 // POST localhost:3000/potlucks
 router.post('/', isLoggedIn, potlucksCtrl.create)
 
+// DELETE localhost:3000/potlucks/:id
+router.delete('/:id', isLoggedIn, potlucksCtrl.delete)
+
 export {
   router
 }
