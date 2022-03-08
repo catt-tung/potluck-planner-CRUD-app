@@ -1,9 +1,14 @@
 import { Router } from "express";
-import * as potluckCtrl from "../controllers/potlucks.js"
+import { isLoggedIn } from "../middleware/middelware.js";
+import * as potlucksCtrl from "../controllers/potlucks.js"
 
 const router = Router()
 
-router.get('/', potluckCtrl.index)
+// GET localhost:3000/potlucks/
+router.get('/', potlucksCtrl.index)
+
+// POST localhost:3000/potlucks
+router.post('/', isLoggedIn, potlucksCtrl.create)
 
 export {
   router

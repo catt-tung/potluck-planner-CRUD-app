@@ -15,4 +15,23 @@
 
 </section>
 
+<section>
+  <h2>Create a New Potluck</h2>
+  <form action="/potlucks" method="POST">
+    <label>
+      Title:
+      <input type="text" name="title" autocomplete="off">
+    </label>
+    <label>
+      Date:
+      <input type="date" name="date">
+    </label>
+    <label>
+      Location:
+      <input type="text" name="location">
+    </label>
+    <button type="submit">Create</button>
+  </form>
+</section>
+
 <%- include('../partials/footer') %>

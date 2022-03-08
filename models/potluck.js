@@ -10,7 +10,7 @@ const potluckSchema = new mongoose.Schema({
   timestamps: true,
 })
 
-const Potluck = mongoose.model('Potlick', potluckSchema)
+const Potluck = mongoose.model('Potluck', potluckSchema)
 
 export {
   Potluck
