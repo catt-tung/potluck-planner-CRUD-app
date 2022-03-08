@@ -20,11 +20,31 @@
   </table>
 </section>
 
+<% if (potluck.host.equals(user?.profile._id)) { %>
 <section>
   <h2>More Joining the Fun</h2>
   <button type="submit">Join the Fun!</button>
 </section>
+<% } %> 
 
+
+<% if (potluck.host.equals(user?.profile._id)) { %>
+  <h2>Edit Potluck Details</h2>
+  <form action="/potlucks/<%= potluck._id %>/edit" method="GET">
+    <button class="btn" type="submit">Edit this Potluck</button>
+  </form>
+<% } %> 
+
+
+<% if (potluck.host.equals(user?.profile._id)) { %>
+  <section>
+    <h2>Delete this Potluck</h2>
+    <h3>Be sure you'd like to delete this potluck and all its information before deleting!</h3>
+    <form action="/potlucks/<%= potluck._id %>?_method=DELETE" method="POST">
+      <button class="btn" type="submit">Delete</button>
+    </form>
+  </section>
+<% } %> 
 
 
 <%- include('../partials/footer') %>
