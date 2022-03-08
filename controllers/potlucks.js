@@ -26,7 +26,23 @@ function create(req, res) {
   })
 }
 
+function show (req, res) {
+  Potluck.findById(req.params.id)
+  .populate("host")
+  .then(potluck => {
+    res.render('potlucks/show', {
+      potluck,
+      title: "`${potluck.name} Details`"
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/potlucks')
+  })
+}
+
 export {
   index,
   create,
+  show,
 }

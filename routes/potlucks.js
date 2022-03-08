@@ -6,6 +6,7 @@ const router = Router()
 
 // GET localhost:3000/potlucks/
 router.get('/', potlucksCtrl.index)
+router.get('/:id', potlucksCtrl.show)
 
 // POST localhost:3000/potlucks
 router.post('/', isLoggedIn, potlucksCtrl.create)

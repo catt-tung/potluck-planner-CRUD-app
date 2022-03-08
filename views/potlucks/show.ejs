@@ -1,0 +1,30 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<h1><%= potluck.title %> Potluck</h1>
+<section>
+  <h2>Potluck Info</h2>
+  <h3>Host: <%= potluck.host.name %> </h3>
+  <h3>Date: <%= potluck.date %> </h3>
+  <h3>Location: <%= potluck.address %> </h3>
+  <h3>Allergens: </h3>
+</section>
+
+<section>
+  <h2>Guest List & Potluck Menu</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>is Bringing</th>
+    </tr>
+  </table>
+</section>
+
+<section>
+  <h2>More Joining the Fun</h2>
+  <button type="submit">Join the Fun!</button>
+</section>
+
+
+
+<%- include('../partials/footer') %>

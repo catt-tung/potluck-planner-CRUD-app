@@ -1,6 +1,7 @@
 import mongoose from 'mongoose'
 
 const potluckSchema = new mongoose.Schema({
+  title: String,
   date: Date,
   host: { type: mongoose.Schema.Types.ObjectId, ref: 'Profile' },
   address: String,

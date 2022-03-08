@@ -2,20 +2,6 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>All Potlucks</h1>
-  <% if (potlucks.length !== 0) { %>
-    <ul>
-      <% potlucks.forEach(potluck => { %>
-        <li> <%= potluck.name %></li>
-      <% }) %>
-    </ul>
-  <% } else { %>
-    <h4>Add a Potluck!</h4>
-  <% } %> 
-
-</section>
-
-<section>
   <h2>Create a New Potluck</h2>
   <form action="/potlucks" method="POST">
     <label>
@@ -28,10 +14,25 @@
     </label>
     <label>
       Location:
-      <input type="text" name="location">
+      <input type="text" name="address">
     </label>
     <button type="submit">Create</button>
   </form>
+</section>
+
+<section>
+  <h1>All Potlucks</h1>
+  <% if (potlucks.length !== 0) { %>
+    <ul>
+      <% potlucks.forEach(potluck => { %>
+        <li> 
+          <a href="/potlucks/<%= potluck._id %>"><%= potluck.title %>, <%= potluck.date %></a></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <h4>Add a Potluck!</h4>
+  <% } %> 
+
 </section>
 
 <%- include('../partials/footer') %>
