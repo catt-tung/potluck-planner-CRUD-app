@@ -1,0 +1,23 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h2>Edit This Potluck</h2>
+  <form action="/potlucks/<%= potluck._id %>?_method=PUT" method="POST">
+    <label>
+      Title:
+      <input type="text" name="title" value="<%= potluck.name %>" autocomplete="off">
+    </label>
+    <label>
+      Date:
+      <input type="date" value="<%= potluck.date %>" name="date">
+    </label>
+    <label>
+      Location:
+      <input type="text" value="<%= potluck.address %>" name="address">
+    </label>
+    <button type="submit">Update Potluck Details</button>
+  </form>
+</section>
+
+<%- include('../partials/footer') %>

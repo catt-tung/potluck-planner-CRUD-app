@@ -73,7 +73,7 @@ function addDish(req, res) {
   })
 }
 
-function deleteDish (req, res){
+function deleteDish (req, res) {
   Potluck.findById(req.params.id, function (err, potluck) {
     let index = 0;
     potluck.dishes.forEach(dish => {
@@ -88,6 +88,38 @@ function deleteDish (req, res){
   })
 }
 
+function edit (req, res) {
+  Potluck.findById(req.params.id)
+  .then(potluck => {
+    if (potluck.host.equals(req.user.profile._id)) {
+      res.render('potlucks/edit', {
+        potluck,
+        title: "Edit Potluck Details"
+      })
+    } else {
+      throw new Error ('Not authorized')
+    }
+  })
+}
+
+function update(req, res) {
+  Potluck.findById(req.params.id)
+  .then(potluck => {
+    if (potluck.host.equals(req.user.profile._id)) {
+      potluck.updateOne(req.body, {new: true})
+      .then(() => {
+        res.redirect(`/potlucks/${potluck._id}`)
+      })
+    } else {
+      throw new Error ('Not authorized')
+    }
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect(`/potlucks`)
+  })
+}
+
 export {
   index,
   create,
@@ -95,4 +127,6 @@ export {
   deletePotluck as delete,
   addDish,
   deleteDish,
+  edit,
+  update,
 }
