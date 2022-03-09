@@ -16,6 +16,9 @@ function index(req, res) {
 
 function create(req, res) {
   req.body.host = req.user.profile._id
+  for (let key in req.body) {
+    if (req.body[key] === '') delete req.body[key]
+	}
   Potluck.create(req.body)
   .then (potluck => {
     res.redirect('/potlucks')
