@@ -25,7 +25,7 @@ function create(req, res) {
   })
   .catch (err => {
     console.log(err)
-    res.redirect('potlucks')
+    res.redirect('/potlucks')
   })
 }
 
@@ -35,7 +35,7 @@ function show (req, res) {
   .then(potluck => {
     res.render('potlucks/show', {
       potluck,
-      title: "`${potluck.name} Details`"
+      title: "Potluck Details"
     })
   })
   .catch(err => {

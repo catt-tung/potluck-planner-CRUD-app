@@ -64,11 +64,11 @@
   <h2>More Joining the Fun</h2>
   <form action="/potlucks/<%= potluck._id %>/dishes" method="POST">
     <label for="guest-name">Guest: </label>
-    <input type="text" name="guestName" id="guest-name">
+    <input type="text" name="guestName" id="guest-name" required>
     <label for="dish-name">Dish: </label>
-    <input type="text" name="dishName" id="dish-name">
+    <input type="text" name="dishName" id="dish-name" required>
     <label for="category">Category: </label>
-    <select name="category" id="dish-category">
+    <select name="category" id="dish-category" required>
       <option value="Appetizer">Appetizer</option>
       <option value="Main" selected>Main</option>
       <option value="Dessert">Dessert</option>

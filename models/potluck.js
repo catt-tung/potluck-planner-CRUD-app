@@ -1,8 +1,8 @@
 import mongoose from 'mongoose'
 
 const dishSchema = new mongoose.Schema({
-  dishName: {type: String, required: true},
-  guestName: {type: String, required: true},
+  dishName: {type: String},
+  guestName: {type: String},
   category: {
     type: String,
     enum: ["Appetizer", "Main", "Dessert", "Drink", "Supplies","Other"],
