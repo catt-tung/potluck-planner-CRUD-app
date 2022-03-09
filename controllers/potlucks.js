@@ -70,10 +70,26 @@ function addDish(req, res) {
   })
 }
 
+function deleteDish (req, res){
+  Potluck.findById(req.params.id, function (err, potluck) {
+    let index = 0;
+    potluck.dishes.forEach(dish => {
+      if (dish._id === req.params.dishId) {
+        index = potluck.dish.indexOf(dish)
+      }
+    })
+    potluck.dishes.splice(index, 1)
+    potluck.save(function(err) {
+      res.redirect(`/potlucks/${req.params.id}`)
+    })
+  })
+}
+
 export {
   index,
   create,
   show,
   deletePotluck as delete,
   addDish,
+  deleteDish,
 }

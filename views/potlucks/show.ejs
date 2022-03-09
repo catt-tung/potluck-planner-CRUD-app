@@ -9,6 +9,7 @@
   <h3>Location: <%= potluck.address %> </h3>
 </section>
 
+<% if (potluck.host.equals(user?.profile._id)) { %>
 <section>
   <h2>Guest List & Potluck Menu</h2>
   <table>
@@ -25,11 +26,38 @@
           <td><%= dish.guestName %> </td>
           <td><%= dish.dishName %> </td>
           <td><%= dish.category %> </td>
+          <td>
+            <form action="/potlucks/<%= potluck._id %>/<%= dish._id %>?_method=DELETE" method="POST"><button>X</button>
+            </form>
+          </td>
         </tr>
       <% }) %> 
     </tbody>
   </table>
 </section>
+<% } else { %>
+  <section>
+    <h2>Guest List & Potluck Menu</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>is Bringing</th>
+          <th>Dish Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% potluck.dishes.forEach(dish => { %>
+          <tr>
+            <td><%= dish.guestName %> </td>
+            <td><%= dish.dishName %> </td>
+            <td><%= dish.category %> </td>
+          </tr>
+        <% }) %> 
+      </tbody>
+    </table>
+  </section>
+<% } %> 
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
 <section>
