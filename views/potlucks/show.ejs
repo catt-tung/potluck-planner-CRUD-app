@@ -12,11 +12,22 @@
 <section>
   <h2>Guest List & Potluck Menu</h2>
   <table>
-    <tr>
-      <th>Name</th>
-      <th>is Bringing</th>
-      <th>Dish Type</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>is Bringing</th>
+        <th>Dish Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% potluck.dishes.forEach(dish => { %>
+        <tr>
+          <td><%= dish.guestName %> </td>
+          <td><%= dish.dishName %> </td>
+          <td><%= dish.category %> </td>
+        </tr>
+      <% }) %> 
+    </tbody>
   </table>
 </section>
 

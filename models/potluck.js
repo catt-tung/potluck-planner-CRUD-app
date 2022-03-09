@@ -1,6 +1,5 @@
 import mongoose from 'mongoose'
 
-
 const dishSchema = new mongoose.Schema({
   dishName: String,
   guestName: String,
