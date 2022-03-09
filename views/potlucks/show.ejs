@@ -7,7 +7,6 @@
   <h3>Host: <%= potluck.host.name %> </h3>
   <h3>Date: <%= potluck.date %> </h3>
   <h3>Location: <%= potluck.address %> </h3>
-  <h3>Allergens: </h3>
 </section>
 
 <section>
@@ -16,6 +15,7 @@
     <tr>
       <th>Name</th>
       <th>is Bringing</th>
+      <th>Dish Type</th>
     </tr>
   </table>
 </section>
@@ -23,7 +23,22 @@
 <% if (potluck.host.equals(user?.profile._id)) { %>
 <section>
   <h2>More Joining the Fun</h2>
-  <button type="submit">Join the Fun!</button>
+  <form action="/potlucks/<%= potluck._id %>/dishes" method="POST">
+    <label for="guest-name">Guest: </label>
+    <input type="text" name="guestName" id="guest-name">
+    <label for="dish-name">Dish: </label>
+    <input type="text" name="dishName" id="dish-name">
+    <label for="category">Category: </label>
+    <select name="category" id="dish-category">
+      <option value="Appetizer">Appetizer</option>
+      <option value="Main" selected>Main</option>
+      <option value="Dessert">Dessert</option>
+      <option value="Drink">Drink</option>
+      <option value="Supplies">Supplies</option>
+      <option value="Other">Other</option>
+    </select>
+    <button type="submit">Join the Fun!</button>
+  </form>
 </section>
 <% } %> 
 

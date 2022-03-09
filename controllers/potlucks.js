@@ -59,9 +59,21 @@ function deletePotluck(req, res) {
   })
 }
 
+function addDish(req, res) {
+  Potluck.findById(req.params.id)
+  .then(potluck => {
+    potluck.dishes.push(req.body)
+    potluck.save()
+    .then(()=> {
+      res.redirect(`/potlucks/${req.params.id}`)
+    })
+  })
+}
+
 export {
   index,
   create,
   show,
   deletePotluck as delete,
+  addDish,
 }
