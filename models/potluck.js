@@ -5,7 +5,8 @@ const dishSchema = new mongoose.Schema({
   guestName: String,
   category: {
     type: String,
-    enum: ["Appetizer", "Main", "Dessert", "Drink", "Supplies","Other"]
+    enum: ["Appetizer", "Main", "Dessert", "Drink", "Supplies","Other"],
+    default: "Main"
   },
 }, {
   timestamps: true
@@ -13,10 +14,10 @@ const dishSchema = new mongoose.Schema({
 
 
 const potluckSchema = new mongoose.Schema({
-  title: String,
-  date: Date,
+  title: { type: String, default: "Potluck" },
+  date: { type: Date, default: Date.now },
   host: { type: mongoose.Schema.Types.ObjectId, ref: 'Profile' },
-  address: String,
+  address: { type: String, default: "My Place" },
   dishes: [dishSchema]
 }, {
   timestamps: true,
