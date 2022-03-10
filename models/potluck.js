@@ -14,7 +14,7 @@ const dishSchema = new mongoose.Schema({
 
 
 const potluckSchema = new mongoose.Schema({
-  title: { type: String, required: true, default: "Potluck" },
+  title: { type: String, required: true, default: "Just for Fun" },
   date: { type: Date, required: true, default: Date.now },
   host: { type: mongoose.Schema.Types.ObjectId, ref: 'Profile' },
   address: { type: String, required: true, default: "My Place" },

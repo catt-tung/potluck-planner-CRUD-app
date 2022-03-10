@@ -116,7 +116,7 @@ function update(req, res) {
   })
   .catch(err => {
     console.log(err)
-    res.redirect(`/potlucks`)
+    res.redirect('/potlucks')
   })
 }
 
