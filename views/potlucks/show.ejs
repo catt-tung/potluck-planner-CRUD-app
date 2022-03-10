@@ -27,7 +27,7 @@
           <td><%= dish.dishName %> </td>
           <td><%= dish.category %> </td>
           <td>
-            <form action="/potlucks/<%= potluck._id %>/<%= dish._id %>?_method=DELETE" method="POST"><button>X</button>
+            <form action="/potlucks/<%= potluck._id %>/<%= dish._id %>?_method=DELETE" method="POST"><button>&times;</button>
             </form>
           </td>
         </tr>
@@ -58,6 +58,46 @@
     </table>
   </section>
 <% } %> 
+
+<section class="menu">
+  <div class="menu-header">
+    <h3>Current Menu for <%= potluck.title %> Potluck</h3>
+  </div>
+  <div class="menu-body">
+    <h4>Appetizers</h4>
+    <ul>
+      <% potluck.dishes.forEach(dish => { %>
+        <% if (dish.category === "Appetizer") { %>
+          <li><%= dish.dishName %> </li>
+        <% } %> 
+      <% }) %> 
+    </ul>
+    <h4>Mains</h4>
+    <ul>
+      <% potluck.dishes.forEach(dish => { %>
+        <% if (dish.category === "Main") { %>
+          <li><%= dish.dishName %> </li>
+        <% } %> 
+      <% }) %> 
+    </ul>
+    <h4>Desserts</h4>
+    <ul>
+      <% potluck.dishes.forEach(dish => { %>
+        <% if (dish.category === "Dessert") { %>
+          <li><%= dish.dishName %> </li>
+        <% } %> 
+      <% }) %> 
+    </ul>
+    <h4>Thirsty?</h4>
+    <ul>
+      <% potluck.dishes.forEach(dish => { %>
+        <% if (dish.category === "Drink") { %>
+          <li><%= dish.dishName %> </li>
+        <% } %> 
+      <% }) %> 
+    </ul>
+  </div>
+</section>
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
 <section>
