@@ -1,6 +1,6 @@
 h1 {
   text-align: center;
-  padding: 5rem 0rem 3rem 0rem;
+  padding: 5rem 0rem 0rem 0rem;
 }
 
 h2 {
@@ -11,7 +11,7 @@ h2 {
 .potluck-info {
   border: solid 5px #FEC5BB;
   border-radius: 8px;
-  margin: 8rem 15rem 8rem 15rem;
+  margin: 5rem 15rem 8rem 15rem;
   padding: 3rem;
   background: #fcf7f2;
 }
@@ -33,11 +33,58 @@ th, td {
 }
 
 .menu-button{
-  margin: 3rem auto;
+  margin: 2rem auto;
   display: block;
 }
 
 .delete-button {
   background-color: transparent;
   border: none;
+}
+
+button {
+  color: #22223b;
+  border: solid 2px #d8e2dc;
+  padding: 4px 8px 4px 8px;
+  background-color: #f0f7f4;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.add-guests{
+  border: thick double #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 6rem 15rem;
+  padding: 3rem 1rem 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fcf7f2;
+}
+
+.show-button {
+  margin: 3rem auto;
+  display: block;
+}
+
+input, select {
+  border: solid 1.5px #d8e2dc;
+  background-color: rgb(252, 249, 249);
+}
+
+.update-section{
+  border: solid 5px #FEC5BB;
+  border-radius: 8px;
+  margin: 5rem 15rem 8rem 15rem;
+  padding: 3rem;
+  background: #fcf7f2;
+}
+
+.delete {
+  border: solid 5px #FEC5BB;
+  border-radius: 8px;
+  margin: 5rem 15rem 8rem 15rem;
+  padding: 3rem 3rem 0rem 3rem;
+  background: #fcf7f2;
 }

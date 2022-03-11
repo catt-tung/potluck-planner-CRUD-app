@@ -118,10 +118,11 @@
 </section>
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
-<section>
+<section class="add-guests">
   <h2>More Joining the Fun</h2>
   <form action="/potlucks/<%= potluck._id %>/dishes" method="POST">
-    <label for="guest-name">Guest: </label>
+    <div class="adding-guests">
+      <label for="guest-name">Guest: </label>
     <input type="text" name="guestName" id="guest-name" required>
     <label for="dish-name">Dish: </label>
     <input type="text" name="dishName" id="dish-name" required>
@@ -134,26 +135,31 @@
       <option value="Supplies">Supplies</option>
       <option value="Other">Other</option>
     </select>
-    <button type="submit">Join the Fun!</button>
+    </div>
+    <div>
+      <button class="show-button" type="submit">Join the Fun!</button>
+    </div>
   </form>
 </section>
 <% } %> 
 
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
-  <h2>Update Potluck Details</h2>
+  <section class="update-section">
+    <h2>Update Potluck Details</h2>
   <form action="/potlucks/<%= potluck._id %>/edit" method="GET">
-    <button type="submit">Update details</button>
+    <button class="show-button" type="submit">Update details</button>
   </form>
+  </section>
 <% } %> 
 
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
-  <section>
+  <section class="delete">
     <h2>Delete this Potluck</h2>
     <h3>Be sure you'd like to delete this potluck and all its information before deleting!</h3>
     <form action="/potlucks/<%= potluck._id %>?_method=DELETE" method="POST">
-      <button type="submit">Delete</button>
+      <button class="show-button" type="submit">Delete</button>
     </form>
   </section>
 <% } %> 
