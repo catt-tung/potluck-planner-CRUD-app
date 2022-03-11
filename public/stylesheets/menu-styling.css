@@ -29,8 +29,23 @@
 }
 
 .menu-header .title {
-  font-size: 1.25rem;
+  font-size: 1.7rem;
+  font-family: 'Barlow', sans-serif;
   font-weight: bold;
+  text-align: center;
+}
+
+.menu-list{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-body h4 {
+  font-family: 'Taprom', cursive;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .menu-header .close-button {
@@ -61,4 +76,9 @@
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.menu-button {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
 }

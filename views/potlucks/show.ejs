@@ -4,7 +4,7 @@
 <%- include('../partials/nav') %>
 
 
-<h1><%= potluck.title %> Potluck</h1>
+<h1><%= potluck.title %></h1>
 <section>
   <h2>Potluck Info</h2>
   <h3>Host: <%= potluck.host.name %> </h3>
@@ -64,15 +64,15 @@
 
 
 <section>
-  <button data-menu-target="#menu">View Current Menu</button>
+  <button class="menu-button" data-menu-target="#menu">View Current Menu</button>
   <div class="menu" id="menu">
     <div class="menu-header">
-      <div class="title">Current Menu for <%= potluck.title %> Potluck</div>
+      <div class="title">Current Menu for <%= potluck.title %></div>
       <button data-close-button class="close-button">&times;</button>
     </div>
     <div class="menu-body">
       <h4>Appetizers</h4>
-      <ul>
+      <ul  class="menu-list">
         <% potluck.dishes.forEach(dish => { %>
           <% if (dish.category === "Appetizer") { %>
             <li><%= dish.dishName %> </li>
@@ -80,7 +80,7 @@
         <% }) %> 
       </ul>
       <h4>Mains</h4>
-      <ul>
+      <ul class="menu-list">
         <% potluck.dishes.forEach(dish => { %>
           <% if (dish.category === "Main") { %>
             <li><%= dish.dishName %> </li>
@@ -88,7 +88,7 @@
         <% }) %> 
       </ul>
       <h4>Desserts</h4>
-      <ul>
+      <ul class="menu-list">
         <% potluck.dishes.forEach(dish => { %>
           <% if (dish.category === "Dessert") { %>
             <li><%= dish.dishName %> </li>
@@ -96,9 +96,17 @@
         <% }) %> 
       </ul>
       <h4>Thirsty?</h4>
-      <ul>
+      <ul class="menu-list">
         <% potluck.dishes.forEach(dish => { %>
           <% if (dish.category === "Drink") { %>
+            <li><%= dish.dishName %> </li>
+          <% } %> 
+        <% }) %> 
+      </ul>
+      <h4>Anything Else...</h4>
+      <ul class="menu-list">
+        <% potluck.dishes.forEach(dish => { %>
+          <% if (dish.category === "Other" || dish.category === "Supplies") { %>
             <li><%= dish.dishName %> </li>
           <% } %> 
         <% }) %> 
@@ -134,7 +142,7 @@
 <% if (potluck.host.equals(user?.profile._id)) { %>
   <h2>Update Potluck Details</h2>
   <form action="/potlucks/<%= potluck._id %>/edit" method="GET">
-    <button class="btn" type="submit">Update details</button>
+    <button type="submit">Update details</button>
   </form>
 <% } %> 
 
@@ -144,7 +152,7 @@
     <h2>Delete this Potluck</h2>
     <h3>Be sure you'd like to delete this potluck and all its information before deleting!</h3>
     <form action="/potlucks/<%= potluck._id %>?_method=DELETE" method="POST">
-      <button class="btn" type="submit">Delete</button>
+      <button type="submit">Delete</button>
     </form>
   </section>
 <% } %> 

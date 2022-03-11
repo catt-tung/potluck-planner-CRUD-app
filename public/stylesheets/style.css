@@ -17,18 +17,15 @@ html {
 }
 
 body {
-  background-color: rgb(225, 209, 146);
-  /* Use a system font, if none are available use an available sans-sarif font */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  background-color: #E8E8E4;
+  font-family: 'Barlow', sans-serif;
   margin: 0;
 }
 
-nav {
-  background-color: white;
-  font-size: 1.6rem;
-  display: flex;
-  justify-content: center;
+.avatar {
+  border-radius: 50%;
+  margin: auto;
+  display: block;
 }
 
 main {
@@ -38,7 +35,53 @@ main {
   flex-direction: column;
 }
 
+a {
+  color: #728078;
+}
+
+a:hover{
+  color: #9a8c98;
+}
+
 h1 {
-  font-size: 3.6rem;
+  font-size: 4.2rem;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-family: 'Taprom', cursive;;
+}
+
+h3 {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+ul {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+table {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+form {
+  font-size: 1.6rem;
+  font-family: 'Barlow', sans-serif;
 }
 
