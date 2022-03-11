@@ -82,5 +82,8 @@ form {
   font-family: 'Barlow', sans-serif;
 }
 
-button {
+.mdc-button__label{
+  color: #9a8c98;
 }
+
+
