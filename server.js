@@ -8,6 +8,7 @@ import logger from 'morgan'
 import methodOverride from 'method-override'
 import passport from 'passport'
 import { passUserToView } from './middleware/middelware.js'
+import {MDCRipple} from '@material/ripple';
 
 // connect to MongoDB with mongoose
 import('./config/database.js')

@@ -5,7 +5,7 @@ import * as potlucksCtrl from "../controllers/potlucks.js"
 const router = Router()
 
 // GET localhost:3000/potlucks/
-router.get('/', potlucksCtrl.index)
+router.get('/', isLoggedIn, potlucksCtrl.index)
 // Get localhost:3000/potlucks/:id
 router.get('/:id', potlucksCtrl.show)
 // GET localhost:3000/potlucks/:id/edit

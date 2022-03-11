@@ -32,9 +32,10 @@
   <% if (potlucks.length !== 0) { %>
     <ul>
       <% potlucks.forEach(potluck => { %>
+        <% if (potluck.host.equals(user?.profile._id)) { %> 
         <li> 
           <a href="/potlucks/<%= potluck._id %>"><%= potluck.title %>, <%= potluck.date %></a></li>
-      <% }) %>
+      <% }}) %>
     </ul>
   <% } else { %>
     <h4>Add a Potluck!</h4>
