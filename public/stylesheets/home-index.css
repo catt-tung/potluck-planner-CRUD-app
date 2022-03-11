@@ -7,6 +7,14 @@ h3 {
   text-align: center;
 }
 
+.container img {
+  width: 98%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0px auto;
+}
+
 .container {
   margin: 5rem;
   border: solid 3px #FEC5BB;
