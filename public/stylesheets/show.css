@@ -1,4 +1,19 @@
 h1 {
   text-align: center;
-  padding: 5rem;
+  padding: 5rem 0rem 3rem 0rem;
 }
+
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.potluck-info {
+  border: solid 5px #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 8rem 15rem;
+  padding: 3rem;
+  background: #fcf7f2;
+}
+
+.guest-list {}

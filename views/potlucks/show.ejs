@@ -6,7 +6,7 @@
 
 
 <h1><%= potluck.title %></h1>
-<section>
+<section class="potluck-info">
   <h2>Potluck Info</h2>
   <h3>Host: <%= potluck.host.name %> </h3>
   <h3>Date: <%= potluck.date %> </h3>
@@ -14,7 +14,7 @@
 </section>
 
 <% if (potluck.host.equals(user?.profile._id)) { %>
-<section>
+<section class="guest-list">
   <h2>Guest List & Potluck Menu</h2>
   <table>
     <thead>
