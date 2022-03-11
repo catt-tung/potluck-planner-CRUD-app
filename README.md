@@ -1,7 +1,7 @@
 # Potluck Planner
 A fullstack MEN application (MongoDB, Express.js, Node.js) with fully functional CRUD capability to help organize and plan Potluck Parties. This app includes the use of Passport and Google OAuth2 for authentication and authorization granting specific permissions to each profile, and uses Mongoose models and schemas to organize data structures. The app is deployed on Heroku and can be found [here](https://potluck-planner-crud-app.herokuapp.com/).
 ## About this Potluck Planner
-![Screenshot](https://i.ibb.co/hRrWWh2/potluck-planner-hero-image.png)
+![Screenshot](https://i.ibb.co/47dt0y3/Screen-Shot-2022-03-11-at-9-49-06-AM.png)
 ### _Who doesn't love a good potluck?_
 Potluck Planner was created with the intetion to make use of Create, Read, Update, Delete (CRUD) functionality with storing and embedding/referencing data in mind. With the ability to login and view relevant information for a get together where many pieces of information need to be tracked, saved, and shared, any potluck would be able to benefit with this app being leveraged for planning purposes!
 
