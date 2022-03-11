@@ -19,6 +19,14 @@
       <div class="welcome-message">
         <p>Hi there <%= user.profile.name %>! Let's get started by adding a potluck. Head over to <a href="/potlucks">All Potlucks</a> and let's get planning!</p>
       </div>
+    <% } else { %>
+      <div class="signin">
+        <a href="/auth/google" class="siwg-link">
+          <button type="submit" class="siwg">
+            <img id="siwg-image" alt="Sign in with Google" />
+          </button>
+        </a>
+      </div>
     <% } %>
   </div>
 </main>
