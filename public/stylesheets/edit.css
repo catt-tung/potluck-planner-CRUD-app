@@ -1,0 +1,29 @@
+h2 {
+  padding: 10px;
+}
+
+section {
+  border: thick double #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 6rem 15rem;
+  padding: 2rem 1rem 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fcf7f2;
+}
+
+button {
+  color: #22223b;
+  border: solid 2px #d8e2dc;
+  padding: 4px 8px 4px 8px;
+  background-color: #f0f7f4;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.show-button {
+  margin: 3rem auto 0rem auto;
+  display: block;
+}
