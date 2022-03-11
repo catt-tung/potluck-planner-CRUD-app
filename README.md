@@ -22,7 +22,7 @@ The following technologies were used to build this stack:
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ## Wireframing & Pseudocoding
-My initial [wireframe](https://whimsical.com/potluck-planner-unit-2-project-wireframe-5jx9ZvEg3JAHKxK2pDbpbq) was the conception of a rather complicated backend routing architecture which I have placed in my stretch goals. I've re-routed most of it to create this initial MVP working version at the bottom, which cuts down on a separate Model for the dishes and cross-functional user interactions.
+My initial [wireframe](https://whimsical.com/potluck-planner-unit-2-project-wireframe-5jx9ZvEg3JAHKxK2pDbpbq) was the conception of a rather complicated backend routing architecture which I have placed in my stretch goals. I've re-routed most of it to create this initial MVP working version at the bottom, which cuts down on a separate Model for the dishes and cross-functional user interactions. I used [Trello](https://trello.com/b/Fv7hsFD3/unit-2-project-trello-board) to keep track of my progress and notes.
 ## How to Use the App
 The app requires a Google OAuth2 login - once you are logged in, you can go to "All Potlucks" and create a new potluck, and start adding guests and what they're bringing to the party! The app also includes a menu feature to see what's in store for the day. 
 ## Stretch Goals
@@ -30,6 +30,7 @@ Ideally I'd like the app to be an entire ecosystem of a potluck loving community
 
 I'd also love to add some API's like Google Maps, Recipe API's, and even an Instagram API to add images from the party. 
 ## Credits
++ Favicon is from [Icons8](https://icons8.com)
 + Badges for technologies were take from [Ileriayo's GH repo](https://github.com/Ileriayo/markdown-badges) using shields.io
 + I followed Kyle's [open modal tutorial](https://github.com/WebDevSimplified/Vanilla-JavaScript-Modal) to create the expanding menu - really helpful tutorial!
 + My best friends for any learning project: ![MDN Web Docs](https://img.shields.io/badge/MDN_Web_Docs-black?style=for-the-badge&logo=mdnwebdocs&logoColor=white) ![Stack Overflow](https://img.shields.io/badge/-Stackoverflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white)

@@ -17,6 +17,9 @@ body {
   background-color: #E8E8E4;
   font-family: 'Barlow', sans-serif;
   margin: 0;
+  height: 100%;
+  margin: 0px;
+  padding-bottom: 0;
 }
 
 .avatar {
@@ -86,4 +89,10 @@ form {
   color: #9a8c98;
 }
 
+footer {
+  text-align: center;
+}
 
+button:hover{
+  background-color: #f5efee92;
+}

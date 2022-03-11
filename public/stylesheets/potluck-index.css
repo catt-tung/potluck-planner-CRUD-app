@@ -13,3 +13,28 @@
 div {
   margin: 3px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.potluck-listing {
+  border: solid 5px #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 8rem 15rem;
+  padding: 5.5rem;
+  background: #fcf7f2;
+}
+
+input {
+  border: solid 1.5px #d8e2dc;
+  background-color: rgb(252, 249, 249);
+}
+
+button {
+  color: #22223b;
+  border: solid 1.2px #d8e2dc;
+  padding: 4px 8px 4px 8px;
+  background-color: #f0f7f4;
+  font-size: 1rem;
+}
