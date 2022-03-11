@@ -1,7 +1,7 @@
 # Potluck Planner
 A fullstack MEN application (MongoDB, Express.js, Node.js) with fully functional CRUD capability to help organize and plan Potluck Parties. This app includes the use of Passport and Google OAuth2 for authentication and authorization granting specific permissions to each profile, and uses Mongoose models and schemas to organize data structures. The app is deployed on Heroku and can be found [here](https://potluck-planner-crud-app.herokuapp.com/).
 ## About this Potluck Planner
-![Screenshot](https://i.ibb.co/47dt0y3/Screen-Shot-2022-03-11-at-9-49-06-AM.png)
+![HeroImage](https://i.ibb.co/47dt0y3/Screen-Shot-2022-03-11-at-9-49-06-AM.png)
 ### _Who doesn't love a good potluck?_
 Potluck Planner was created with the intetion to make use of Create, Read, Update, Delete (CRUD) functionality with storing and embedding/referencing data in mind. With the ability to login and view relevant information for a get together where many pieces of information need to be tracked, saved, and shared, any potluck would be able to benefit with this app being leveraged for planning purposes!
 
@@ -27,6 +27,9 @@ My initial [wireframe](https://whimsical.com/potluck-planner-unit-2-project-wire
 The app requires a Google OAuth2 login - once you are logged in, you can go to "All Potlucks" and create a new potluck, and start adding guests and what they're bringing to the party! The app also includes a menu feature to see what's in store for the day. 
 ## Stretch Goals
 Ideally I'd like the app to be an entire ecosystem of a potluck loving community. I'd like to refactor the data modeling and the entity relationships to allow the dishes to have their own profiles owned by a specific user, where others can comment and add feedback/leave reviews. This also allows information such as addresses and allergens to be saved and automated into the planning process, making all potentially releavnt information be available to all.
+
+This was the initial conception of an ERD I was coming up with but required a lot more backend architecture and routing complications that was a bit beyond a half week project.
+![ERD](https://i.ibb.co/jMmxznn/ERD-for-Unit-2-Project-drawio-2.png)
 
 I'd also love to add some API's like Google Maps, Recipe API's, and even an Instagram API to add images from the party. 
 ## Credits
