@@ -1,0 +1,15 @@
+.create-form {
+  border: thick double #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 8rem 15rem;
+  padding: 3rem 1rem 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fcf7f2;
+}
+
+div {
+  margin: 3px;
+}
