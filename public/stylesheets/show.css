@@ -16,4 +16,28 @@ h2 {
   background: #fcf7f2;
 }
 
-.guest-list {}
+.guest-list {
+  border: solid 5px #FEC5BB;
+  border-radius: 8px;
+  margin: 8rem 15rem 0rem 15rem;
+  padding: 3rem;
+  background: #fcf7f2;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 0px 10px;
+}
+
+.menu-button{
+  margin: 3rem auto;
+  display: block;
+}
+
+.delete-button {
+  background-color: transparent;
+  border: none;
+}

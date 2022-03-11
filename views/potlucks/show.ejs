@@ -31,7 +31,7 @@
           <td><%= dish.dishName %> </td>
           <td><%= dish.category %> </td>
           <td>
-            <form action="/potlucks/<%= potluck._id %>/<%= dish._id %>?_method=DELETE" method="POST"><button>&times;</button>
+            <form action="/potlucks/<%= potluck._id %>/<%= dish._id %>?_method=DELETE" method="POST"><button class="delete-button">&times;</button>
             </form>
           </td>
         </tr>
@@ -40,7 +40,7 @@
   </table>
 </section>
 <% } else { %>
-  <section>
+  <section class="guest-list">
     <h2>Guest List & Potluck Menu</h2>
     <table>
       <thead>
@@ -157,6 +157,5 @@
     </form>
   </section>
 <% } %> 
-
 
 <%- include('../partials/footer') %>
