@@ -37,6 +37,11 @@ h3 {
   padding-bottom: 5rem;
 }
 
-@media screen and (max-width: 767px) {
-  
-}
+/* @media screen and (max-width: 767px) {
+  .container {
+    margin: 1rem;
+    border: solid 3px #FEC5BB;
+    background: #fcf7f2;
+    border-radius: 2.5rem;
+  }
+} */

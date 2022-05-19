@@ -43,12 +43,19 @@ button {
   .create-form {
     border: thick double #FEC5BB;
     border-radius: 8px;
-    margin: 8rem 4rem 8rem 4rem;
+    margin: 8rem 3rem 8rem 2rem;
     padding: 3rem 1.5rem 4rem 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #fcf7f2;
+  }
+  .potluck-listing {
+    border: solid 5px #FEC5BB;
+    border-radius: 8px;
+    margin: 8rem 3rem 8rem 3rem;
+    padding: 3rem;
     background: #fcf7f2;
   }
 }
