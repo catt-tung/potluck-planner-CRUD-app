@@ -36,3 +36,7 @@ h3 {
   text-align: center;
   padding-bottom: 5rem;
 }
+
+@media screen and (max-width: 767px) {
+  
+}

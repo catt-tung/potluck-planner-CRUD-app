@@ -38,3 +38,17 @@ button {
   background-color: #f0f7f4;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 767px) {
+  .create-form {
+    border: thick double #FEC5BB;
+    border-radius: 8px;
+    margin: 8rem 4rem 8rem 4rem;
+    padding: 3rem 1.5rem 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fcf7f2;
+  }
+}
