@@ -3,7 +3,7 @@ A fullstack MEN application (MongoDB, Express.js, Node.js) with fully functional
 ## About this Potluck Planner
 ![HeroImage](https://i.ibb.co/47dt0y3/Screen-Shot-2022-03-11-at-9-49-06-AM.png)
 ### _Who doesn't love a good potluck?_
-Potluck Planner was created with the intetion to make use of Create, Read, Update, Delete (CRUD) functionality with storing and embedding/referencing data in mind. With the ability to login and view relevant information for a get together where many pieces of information need to be tracked, saved, and shared, any potluck would be able to benefit with this app being leveraged for planning purposes!
+Potluck Planner was created with the intention to make use of Create, Read, Update, Delete (CRUD) functionality with storing and embedding/referencing data in mind. With the ability to login and view relevant information for a get together where many pieces of information need to be tracked, saved, and shared, any potluck would be able to benefit with this app being leveraged for planning purposes!
 
 Also, potlucks are cost-friendly, social, and can hold a lot of history from the participants. It's my hope that with the stretch goal features being built in and refactored into the app, we can have more potlucks, more getting-to-know-each-others, more social connections, and more good food go around.  
 ## Technologies Used
